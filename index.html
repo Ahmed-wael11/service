@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fixit car Service Center</title>
+</head>
+<body>
+    <div class="banner">
+
+    </div>
+    <div class="about">
+
+        <h3>Welcome to Fixit car Service Center</h3>
+                   <p>Here Where you can find all cars needs with all brands and all models</p>
+                   <p style="margin-bottom: 30px;">all you need to send us your car details and what is the service you need to make it and leave the rest for us whether we will come to you or would be a visit</p>
+                   <a href="tel:01070704060">Contact us now</a>
+                   <a href="https://api.whatsapp.com/send?phone=201070704060">Whatsapp us now</a>
+       </div>
+    <div class="service">
+        <div>
+            <img src="./Images/2.webp" alt="services">
+        </div>
+        <div class="responsive">
+            <h2>Just fill & we will fix </h2>
+            <form onsubmit="validateForm(event)">
+                <label for="fname">Full name :</label><br>
+                <input type="text" id="fname" name="fname"  required><br>
+                <label for="car">Car brand name :</label><br>
+                <input type="text" id="car" name="car" required><br>
+                <label for="model">Car model :</label><br>
+                <input type="text" id="model" name="model" required><br>
+                <label for="plate">Plate number :</label><br>
+                <input type="text" id="plate" name="plate" required><br>
+                <label for="complaint">Your complaints :</label><br>
+                <input type="text" id="complaint" name="complaint" required><br>
+                <label for="email">Your email :</label><br>
+                <input type="email" id="email" name="email"  required><br>
+                <label for="phone">Your mobile number :</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+  
+                <label for="service">Choose your service :</label><br>
+                  <select id="service" name="service" required>
+                   <option value="Car repair">Car Repair</option>
+                   <option value="car care">Car care</option>
+                   <option value="Battery service">Battery Service</option>
+                   <option value="Engine">Engine service</option>
+                   <option value="used">used car inspection</option>
+                   <option value="new">new car inspection</option>
+                   <option value="preventive">Preventive maintenance service</option>
+                  </select>
+              
+              
+              <br><br>
+              <input type="submit" value="confirm Now" id="submit" >
+              </form>
+          
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
